@@ -1,0 +1,84 @@
+// main: ..//style.less
+.b4 {
+    background: url(.././images/dest/b4bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: @white;
+
+    .b4__wrapper {
+        padding: 90px 0;
+        text-align: center;
+
+        .b4__inner {
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 10px;
+            font-family: "MuseoSansBlack";
+        }
+
+
+
+        p {
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 24px;
+            font-family: "MuseoSansLight";
+        }
+
+    }
+}
+
+@media (max-width:425px) {
+    .b4 {
+        padding: 50px 0;
+
+
+        .b4__wrapper {
+            width: 400px;
+
+            h2 {
+                font-size: 26px;
+                line-height: normal;
+            }
+
+            .b4__sheets {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b4 {
+        padding: 0;
+
+        .b4__wrapper {
+            width: 100%;
+            padding: 0;
+
+            .b4__inner {
+                padding: 30px 0;
+                width: 350px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .b4 {
+
+        .b4__wrapper {
+            .b4__inner {
+                width: 300px;
+            }
+        }
+    }
+}

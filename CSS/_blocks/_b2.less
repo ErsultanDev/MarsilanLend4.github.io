@@ -1,0 +1,148 @@
+// main: ..//style.less
+.b2 {
+
+    color: @white;
+
+    .b2__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .b2__first,
+        .b2__third {
+            background: url(.././images/dest/b2bg.jpg);
+            background-size: cover;
+            width: 50%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        .b2__second {
+            padding: 50px 0;
+            color: #938A8A;
+            width: 50%;
+
+            h2 {
+                color: @blue;
+                font-size: 40px;
+                line-height: 48px;
+                margin-bottom: 10px;
+                font-family: "MuseoSansBlack";
+            }
+
+            h3 {
+                font-size: 19px;
+                font-family: "MuseoSansLight";
+                margin-bottom: 30px;
+            }
+
+            .b2__sheets {
+                width: 400px;
+                margin: auto;
+
+                .b2__list {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 25px;
+                    font-size: 20px;
+                    font-family: "MuseoSansBlack";
+
+                    color: @blue;
+
+                    .b2__line {
+                        margin-right: 15px;
+
+                        span {
+                            &::after {
+                                content: "";
+                                background-color: @blue;
+                                width: 30px;
+                                height: 5px;
+                                display: block;
+                            }
+                        }
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .b2 {
+
+        .b2__wrapper {
+
+            .b2__second {
+                width: 100%;
+            }
+
+
+        }
+
+    }
+}
+
+@media (max-width:768px) {
+    .b2 {
+
+        .b2__wrapper {
+            flex-direction: column;
+
+            .b2__first,
+            .b2__third {
+                display: none;
+            }
+
+            .b2__second {
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+@media (max-width:425px) {
+    .b2 {
+        .b2__wrapper {
+            .b2__second {
+                padding: 30px 0;
+                     h2{
+                         font-size: 30px;
+                         line-height: normal;
+                     }
+                .b2__sheets {
+                    width: 300px;
+                }
+
+            }
+
+        }
+
+    }
+}
+
+@media (max-width:320px) {
+    .b2 {
+        .b2__wrapper {
+            .b2__second {
+                .b2__sheets {
+                    text-align: center;
+
+                    .b2__list {
+                        margin: 25px;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+}

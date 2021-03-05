@@ -1,0 +1,55 @@
+// main: ..//style.less
+
+
+.properties {
+    padding: 90px 0;
+
+    .properties__wrapper {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            font-family: "MuseoSansBlack";
+            font-size: 30px;
+            color: @blue;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .properties {
+        .properties__wrapper {
+            max-width: 400px;
+
+            h2 {
+
+                font-size: 20px;
+
+            }
+
+            p {
+                font-size: 16px;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .properties {
+        padding: 30px 0;
+
+        .properties__wrapper {
+            max-width: 300px;
+
+        }
+    }
+}

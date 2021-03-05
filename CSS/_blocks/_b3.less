@@ -1,0 +1,128 @@
+//main:..//style.less
+.b3 {
+    padding: 90px 0;
+    text-align: center;
+
+    .container {
+        max-width: 1060px;
+    }
+
+    .b3__header {
+        width: 900px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+        h2 {
+            color: @blue;
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 30px;
+            font-family: "MuseoSansBlack";
+        }
+
+
+    }
+
+    .b3__wrapper {
+        display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 1200px;
+        margin: auto;
+
+        .b3__item {
+            width: 250px;
+            margin: 30px 0;
+
+            .b3__picture {
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 22px;
+                color: @blue;
+                font-family: "MuseoSansBlack";
+            }
+        }
+    }
+}
+
+@media (max-width:1440px) {
+    .b3 {
+        .container {
+            max-width: 1100px;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .b3 {
+        .container {
+            max-width: 800px;
+        }
+
+        .b3__wrapper {
+            -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            width: 600px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .b3 {
+        padding: 0;
+
+        .b3__header {
+            width: 600px;
+        }
+
+        .b3__wrapper {
+            width: 300px;
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b3 {
+        padding: 30px 0;
+
+        .b3__header {
+            width: 400px;
+            h2{
+                font-size: 24px;
+                line-height: normal;
+            }
+        }
+
+        .b3__wrapper {
+            width: 250px;
+            .b3__item{
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .b3 {
+        .b3__header {
+            width: 350px;
+
+        }
+
+
+    }
+}
+
+@media (max-width:425px) {
+    .b3 {
+        .b3__header {
+            width: 280px;
+        }
+    }
+}
